@@ -1,0 +1,111 @@
+{
+  "trueRate": 0.0084,
+  "margin": 0.35,
+  "campaign": 10000000,
+  "profitPerBuy": {
+    "LivingRoom": 64.33290143452105,
+    "Bedroom": 73.78954453587411,
+    "KitchenDining": 69.56125760649087,
+    "Storage": 72.60689395028021,
+    "Lighting": 70.30765377609639,
+    "HomeDecor": 74.32965407208644,
+    "Outdoor": 71.04403074115665
+  },
+  "policies": {
+    "Random department (today)": {
+      "value": 0.5922731135999999,
+      "predicted": null,
+      "lift": 0.0,
+      "campaign_gain": 0.0
+    },
+    "Logistic per department, by purchase chance": {
+      "value": 0.6003334175999999,
+      "predicted": null,
+      "mix": {
+        "LivingRoom": 0.38288,
+        "Bedroom": 0.09618,
+        "KitchenDining": 0.36964,
+        "Storage": 0.005,
+        "Lighting": 0.07594,
+        "HomeDecor": 0.04658,
+        "Outdoor": 0.02378
+      },
+      "ci_per_customer": [
+        -0.01980244780132264,
+        0.030149236366083867
+      ],
+      "lift": 0.013609099948851844,
+      "campaign_gain": 80603.04000000018
+    },
+    "Logistic per department, by expected profit": {
+      "value": 0.6142216247999999,
+      "predicted": 4.038569184161956,
+      "mix": {
+        "LivingRoom": 0.17498,
+        "Bedroom": 0.18384,
+        "KitchenDining": 0.40532,
+        "Storage": 0.01626,
+        "Lighting": 0.08296,
+        "HomeDecor": 0.09406,
+        "Outdoor": 0.04258
+      },
+      "ci_per_customer": [
+        -0.002490871073273419,
+        0.04570365520333346
+      ],
+      "lift": 0.037058091437902396,
+      "campaign_gain": 219485.11199999964
+    },
+    "LightGBM, one model, by purchase chance": {
+      "value": 0.5666982888,
+      "predicted": null,
+      "mix": {
+        "LivingRoom": 0.92222,
+        "Bedroom": 0.0373,
+        "KitchenDining": 0.0134,
+        "Storage": 0.00796,
+        "Lighting": 0.01478,
+        "HomeDecor": 0.00314,
+        "Outdoor": 0.0012
+      },
+      "ci_per_customer": [
+        -0.04865287793007057,
+        -0.0036196054648713455
+      ],
+      "lift": -0.04318079651556206,
+      "campaign_gain": -255748.2479999995
+    },
+    "LightGBM, one model, by expected profit": {
+      "value": 0.5920470863999999,
+      "predicted": 3.635332984765377,
+      "mix": {
+        "LivingRoom": 0.00026,
+        "Bedroom": 0.14872,
+        "KitchenDining": 0.01738,
+        "Storage": 0.01638,
+        "Lighting": 0.00102,
+        "HomeDecor": 0.58804,
+        "Outdoor": 0.2282
+      },
+      "ci_per_customer": [
+        -0.025068005678107207,
+        0.02664013799848712
+      ],
+      "lift": -0.00038162664286101045,
+      "campaign_gain": -2260.2719999997857
+    },
+    "Everyone gets Bedroom": {
+      "value": 0.619285128,
+      "predicted": null,
+      "lift": 0.04560736217758321,
+      "campaign_gain": 270120.1440000012
+    }
+  },
+  "rounds": 53,
+  "ltvByFrequency": {
+    "1": 19.63048757161074,
+    "2": 27.04693270376736,
+    "3": 24.949284004955153,
+    "4": 23.08019474305498
+  }
+}
